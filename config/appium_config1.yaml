@@ -1,0 +1,11 @@
+appium_server_url:
+  url = 'http://localhost:4723'
+  driver = webdriver.Remote(url,options=AppiumOptions().load_capabilities(cap))
+desired_capabilities:
+    "platformName": "android",
+    "automationName": 'uiautomator2',
+    "deviceName": "PD21ADD464007181",
+    "appPackage": "io.appium.android.apis",
+    "appActivity": "io.appium.android.apis.ApiDemos",
+    "language": "en",
+    "locate": "US"
