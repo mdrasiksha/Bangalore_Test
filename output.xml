@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.12.1 on win32)" generated="2024-10-26T08:56:25.199507" rpa="false" schemaversion="5">
+<suite id="s1" name="Launch The App" source="C:\Users\10720021\PycharmProjects\Appium_robot_framework\testcases\launch_the_app.robot">
+<test id="s1-t1" name="open_app" line="11">
+<kw name="Open Application" owner="AppiumLibrary">
+<arg>http://localhost:4723</arg>
+<arg>platformName=Android</arg>
+<arg>deviceName=1C091FDF6006K4</arg>
+<arg>automationName=Uiautomator2</arg>
+<arg>appPackage=io.appium.android.apis</arg>
+<arg>appActivity=io.appium.android.apis.ApiDemos</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.1/cli/args/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="PASS" start="2024-10-26T08:56:25.785378" elapsed="7.492126"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<msg time="2024-10-26T08:56:34.787836" level="INFO">xpath criteria: //android.widget.TextView[@text="API Demos"]</msg>
+<arg>${tille}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" start="2024-10-26T08:56:33.277504" elapsed="1.510332"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-10-26T08:56:34.787836" level="INFO">Clicking element 'xpath=//android.widget.TextView[@content-desc="App"]'.</msg>
+<msg time="2024-10-26T08:56:36.150475" level="INFO">xpath criteria: //android.widget.TextView[@content-desc="App"]</msg>
+<arg>${app_icon}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-10-26T08:56:34.787836" elapsed="1.362639"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-10-26T08:56:36.150475" level="INFO">Clicking element 'xpath=//android.widget.TextView[@content-desc="Search"]'.</msg>
+<msg time="2024-10-26T08:56:37.549285" level="INFO">xpath criteria: //android.widget.TextView[@content-desc="Search"]</msg>
+<arg>${search}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-10-26T08:56:36.150475" elapsed="1.398810"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-10-26T08:56:37.549285" level="INFO">Clicking element 'xpath=//android.widget.TextView[@content-desc="Invoke Search"]'.</msg>
+<msg time="2024-10-26T08:56:38.975080" level="INFO">xpath criteria: //android.widget.TextView[@content-desc="Invoke Search"]</msg>
+<arg>${search_result}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-10-26T08:56:37.549285" elapsed="1.425795"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-10-26T08:56:38.975080" level="INFO">Clicking element 'xpath=//android.widget.EditText[@resource-id="io.appium.android.apis:id/txt_query_prefill"]'.</msg>
+<msg time="2024-10-26T08:56:39.180521" level="INFO">xpath criteria: //android.widget.EditText[@resource-id="io.appium.android.apis:id/txt_query_prefill"]</msg>
+<arg>${query}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-10-26T08:56:38.975080" elapsed="0.205441"/>
+</kw>
+<kw name="Input Text" owner="AppiumLibrary">
+<msg time="2024-10-26T08:56:39.180521" level="INFO">Typing text 'password' into text field 'xpath=//android.widget.EditText[@resource-id="io.appium.android.apis:id/txt_query_prefill"]'</msg>
+<msg time="2024-10-26T08:56:40.212880" level="INFO">xpath criteria: //android.widget.EditText[@resource-id="io.appium.android.apis:id/txt_query_prefill"]</msg>
+<arg>${query}</arg>
+<arg>password</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<status status="PASS" start="2024-10-26T08:56:39.180521" elapsed="1.032359"/>
+</kw>
+<status status="PASS" start="2024-10-26T08:56:25.785378" elapsed="14.427502"/>
+</test>
+<status status="PASS" start="2024-10-26T08:56:25.199507" elapsed="15.013373"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Launch The App">Launch The App</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-10-26T08:56:25.183481" level="ERROR">Error in file 'C:\Users\10720021\PycharmProjects\Appium_robot_framework\testcases\launch_the_app.robot' on line 3: Non-existing setting 'add'.</msg>
+</errors>
+</robot>
