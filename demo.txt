@@ -1,0 +1,8 @@
+{   "platformName": "android",
+    "automationName": 'uiautomator2',
+    "deviceName": "PD21ADD464007181",
+    "appPackage":"io.appium.android.apis",
+    "appActivity": "io.appium.android.apis.ApiDemos",
+    "language": "en",
+    "locate": "US"
+}
